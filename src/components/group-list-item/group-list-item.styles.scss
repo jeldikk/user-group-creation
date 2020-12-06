@@ -1,0 +1,31 @@
+.group-list-item{
+    display: flex;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+
+    .name{
+        padding: 5px;
+        width: 30%;
+    }
+
+    .description{
+        padding: 5px;
+        // font-size: 12px;
+        width: 30%;
+    }
+
+    .buttons{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+
+        button{
+            margin-left: 20px;
+        }
+    }
+
+
+}

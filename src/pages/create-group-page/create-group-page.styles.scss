@@ -1,0 +1,40 @@
+.create-group-page{
+
+
+    margin-top: 20px;
+
+    .badge{
+        cursor: pointer;
+        // padding: 5px;
+        margin-left: 5px;
+    }
+
+    .users-preview{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .reverse-users-preview{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .sorting-container{
+
+
+        .sort-control{
+            width: 15%
+        }
+
+    }
+
+    
+
+
+
+
+}

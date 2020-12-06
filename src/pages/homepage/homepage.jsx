@@ -1,10 +1,14 @@
 import React from 'react'
 
+import {Container} from 'react-bootstrap'
+
+import GroupList from "../../components/group-list/group-list.component"
+
 const Homepage = () => {
     return (
-        <div>
-            <h1>HomePage is here</h1>
-        </div>
+        <Container>
+            <GroupList />
+        </Container>
     )
 }
 
