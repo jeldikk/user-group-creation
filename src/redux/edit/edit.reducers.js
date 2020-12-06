@@ -1,7 +1,5 @@
 import EditActionTypes from "./edit.types"
 
-import {selectEditUsers} from './edit.selectors'
-
 const INITIAL_STATE = {
     name: '',
     description: '',

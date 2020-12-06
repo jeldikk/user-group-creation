@@ -6,8 +6,6 @@ const INITIAL_STATE = {
 
 const groupReducer = (state=INITIAL_STATE, action)=>{
 
-    // console.log('groupReducer is ', action.payload)
-
     switch(action.type){
         case GroupActionTypes.CREATE_GROUP:
             return {

@@ -4,7 +4,6 @@ import {connect} from 'react-redux'
 import "./users-preview.styles.scss"
 
 import {selectEditOrdered} from "../../redux/edit/edit.selectors"
-import {selectEditUsers} from "../../redux/edit/edit.selectors"
 
 import UserCard from "../user-card/user-card.component"
 

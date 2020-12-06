@@ -7,12 +7,8 @@ import {connect} from "react-redux"
 
 import {withRouter} from 'react-router-dom'
 
-import UserCard from '../../components/user-card/user-card.component'
-
 import {createGroup} from "../../redux/group/group.actions"
 
-
-// import {selectAscOrdered, selectDscOrdered} from "../../redux/users/users.selectors"
 import {selectUserList} from "../../redux/users/users.selectors"
 import {setUsers} from "../../redux/users/users.actions"
 
@@ -20,6 +16,8 @@ import {setEditUsers, setSortOrder} from "../../redux/edit/edit.actions"
 
 import "./create-group-page.styles.scss"
 import UsersPreview from "../../components/users-preview/users-preview.component"
+
+
 
 class CreateGroupPage extends React.Component{
 
@@ -63,10 +61,6 @@ class CreateGroupPage extends React.Component{
 
     onFormSubmit = (event)=>{
         event.preventDefault();
-
-        // console.log(this.state)
-        // console.log("form submitted")
-
         
         const {name, description} = this.state
 
@@ -85,52 +79,6 @@ class CreateGroupPage extends React.Component{
         this.props.history.push("/")
     }
 
-    /*
-    We implemented the same in redux
-
-    onUserAdd = (userid)=>{
-
-        console.log('onUserAdd called by', userid)
-        
-        const updatedUsers = this.state.users.map((user) => {
-            if(user.id === userid){
-                return {
-                    ...user,
-                    selected: true
-                }
-            }
-            else{
-                return user
-            }
-        })
-
-        this.setState({users: updatedUsers})
-    }
-
-    /*
-
-    We have implemented the same in redux
-
-    onUserRemove = (userid) => {
-
-        console.log('onUserRemove called by ', userid)
-        
-        const updatedUsers = this.state.users.map((user)=>{
-            if(user.id === userid){
-                return {
-                    ...user,
-                    selected: false
-                }
-            }
-            else{
-                return user
-            }
-        })
-
-        this.setState({users: updatedUsers})
-    }
-
-    */
 
     onSortOrderChange = (event) => {
 
@@ -162,8 +110,6 @@ class CreateGroupPage extends React.Component{
 
     render(){
         
-        // const orderedUserList = this.state.ascending ? this.props.inc_ordered : this.props.dsc_ordered
-
         return (
 
             <div className="create-group-page">
@@ -223,19 +169,5 @@ const mapStateToProps = (state) => {
     }
 }
 
-// const mapStateToProps = (state) => {
-//     return {
-//         inc_ordered: selectAscOrdered(state),
-//         dsc_ordered: selectDscOrdered(state)
-//     }
-// }
-
-
-
-// const mapStateToProps = (state, actualProps) => {
-//     return {
-//         orderedList: selectOrdered()
-//     }
-// }
 
 export default connect(null, mapDispatchToProps)(withRouter(CreateGroupPage))

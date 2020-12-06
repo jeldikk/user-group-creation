@@ -13,16 +13,6 @@ const usersReducer = (state=INITIAL_STATE, action) => {
                 ...state,
                 users: action.payload
             }
-        // case UserActionTypes.ASC_ORDER:
-        //     return {
-        //         ...state,
-        //         users: ascendingOrdered()
-        //     }
-        // case UserActionTypes.DSC_ORDER:
-        //     return {
-        //         ...state,
-        //         users: descedingOrdered()
-        //     }
         default:
             return state
     }

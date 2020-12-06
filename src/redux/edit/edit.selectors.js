@@ -1,19 +1,6 @@
 import {createSelector} from 'reselect'
 
-// const selectEdit = (state) => {
-//     console.log(state);
-//     return state.edit
-// }
-
 const selectEdit = (state) => state.edit
-
-
-// const selectSortOrder = (state) => state.order
-
-// export const selectEditUsers = (state) => {
-//     console.log('state is', state)
-//     return state.users
-// }
 
 export const selectEditUsers = createSelector(
     [selectEdit],
@@ -55,20 +42,6 @@ export const selectDecOrderUsers = createSelector(
         }
     })
 )
-
-// export const selectEditOrdered = (order) => {
-//     if(!order){
-//         if(order){
-//             return selectIncOrderUsers
-//         }
-//         else{
-//             return selectDecOrderUsers
-//         }
-//     }
-//     else{
-//         return selectEditUsers
-//     }
-// }
 
 export const selectEditOrdered = createSelector(
     [selectEditUsers, selectSortOrder],
