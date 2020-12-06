@@ -1,3 +1,9 @@
+# User group creation web application
+
+users are displayed in cards. component styling on user selection and revert back on de-selection. redux store for user group creation.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
