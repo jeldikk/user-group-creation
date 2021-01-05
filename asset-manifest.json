@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/user-group-creation/static/css/main.819b1ec1.chunk.css",
+    "main.js": "/user-group-creation/static/js/main.c0bee3c1.chunk.js",
+    "main.js.map": "/user-group-creation/static/js/main.c0bee3c1.chunk.js.map",
+    "runtime-main.js": "/user-group-creation/static/js/runtime-main.d020a63f.js",
+    "runtime-main.js.map": "/user-group-creation/static/js/runtime-main.d020a63f.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/user-group-creation/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.af8c5c47.chunk.js": "/user-group-creation/static/js/2.af8c5c47.chunk.js",
+    "static/js/2.af8c5c47.chunk.js.map": "/user-group-creation/static/js/2.af8c5c47.chunk.js.map",
+    "index.html": "/user-group-creation/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/user-group-creation/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.819b1ec1.chunk.css.map": "/user-group-creation/static/css/main.819b1ec1.chunk.css.map",
+    "static/js/2.af8c5c47.chunk.js.LICENSE.txt": "/user-group-creation/static/js/2.af8c5c47.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d020a63f.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.af8c5c47.chunk.js",
+    "static/css/main.819b1ec1.chunk.css",
+    "static/js/main.c0bee3c1.chunk.js"
+  ]
+}
